@@ -5,3 +5,4 @@ djangorestframework-simplejwt
 python-dotenv
 django-admin-interface
 gunicorn
+django-cors-headers
