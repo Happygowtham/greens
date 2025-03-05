@@ -30,7 +30,13 @@ SECRET_KEY = 'django-insecure-!24+-w=hvbe$-jt46-jbz=sqn#av35py9al10)2jfxx+kn%xe5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["greens-hugk.onrender.com"]
+ALLOWED_HOSTS = ["greens-hugk.onrender.com",'127.0.0.1']
+CSRF_TRUSTED_ORIGINS = ["https://greens-hugk.onrender.com/"]
+CORS_ALLOWED_ORIGINS = [
+    "https://greens-hugk.onrender.com",
+    "http://127.0.0.1:8000",
+    "http://localhost:8000",
+]
 
 
 # Application definition
