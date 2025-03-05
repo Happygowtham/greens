@@ -31,12 +31,12 @@ SECRET_KEY = 'django-insecure-!24+-w=hvbe$-jt46-jbz=sqn#av35py9al10)2jfxx+kn%xe5
 DEBUG = True
 
 ALLOWED_HOSTS = ["greens-hugk.onrender.com",'127.0.0.1',"localhost","crestcodeinnovations.com"]
-CSRF_TRUSTED_ORIGINS = ["https://greens-hugk.onrender.com/","http://localhost:3000/","http://crestcodeinnovations.com/"]
+CSRF_TRUSTED_ORIGINS = ["https://greens-hugk.onrender.com/","http://localhost:3000/","https://crestcodeinnovations.com/"]
 CORS_ALLOWED_ORIGINS = [
     "https://greens-hugk.onrender.com",
     "http://127.0.0.1:8000",
     "http://localhost:3000",
-    "http://crestcodeinnovations.com/"
+    "https://crestcodeinnovations.com/"
 ]
 
 
