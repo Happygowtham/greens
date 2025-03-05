@@ -49,4 +49,5 @@ class ContactSerializer(serializers.ModelSerializer):
 
 class EmailSerializer(serializers.Serializer):
     subject = serializers.CharField()
+    to_mail = serializers.CharField()
     message = serializers.CharField()

@@ -59,11 +59,11 @@ def sendEmail(request):
         if serializer.is_valid():
             subject = serializer.validated_data.get('subject')
             message = serializer.validated_data.get('message')
+            to = serializer.validated_data.get('to_mail')
             
             if subject and message:
-                try:
-                    print(os.getenv("EMAIL_TO_USER"))
-                    send_mail(subject, message, os.getenv("EMAIL_HOST_USER"), [os.getenv("EMAIL_TO_USER")])
+                try:                    
+                    send_mail(subject, message, os.getenv("EMAIL_HOST_USER"), [to])
                     return JsonResponse({'message': 'Email sent successfully'})
                 except Exception as e:
                     return JsonResponse({'error': str(e)}, status=500)   
