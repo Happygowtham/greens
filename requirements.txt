@@ -1,0 +1,7 @@
+django==4.2
+pillow
+djangorestframework
+djangorestframework-simplejwt
+python-dotenv
+django-admin-interface
+gunicorn
