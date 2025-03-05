@@ -19,27 +19,27 @@ class RoomViewSet(viewsets.ModelViewSet):
 class BookingEnquiryViewSet(viewsets.ModelViewSet):
     queryset = BookingEnquiry.objects.all()
     serializer_class = BookingEnquirySerializer
-    permission_classes = [IsAuthenticated] 
+    permission_classes = [] 
 
 class CustomerFeedbackViewSet(viewsets.ModelViewSet):
     queryset = CustomerFeedback.objects.all()
     serializer_class = CustomerFeedbackSerializer
-    permission_classes = [IsAuthenticated] 
+    permission_classes = [] 
 
 class AmenityViewSet(viewsets.ModelViewSet):
     queryset = Amenity.objects.all()
     serializer_class = AmenitySerializer
-    permission_classes = [IsAuthenticated] 
+    permission_classes = [] 
 
 class InformationUpdateViewSet(viewsets.ModelViewSet):
     queryset = InformationUpdate.objects.all()
     serializer_class = InformationUpdateSerializer
-    permission_classes = [IsAuthenticated] 
+    permission_classes = [] 
 
 class GalleryViewSet(viewsets.ModelViewSet):
     queryset = Gallery.objects.all()
     serializer_class = GallerySerializer
-    permission_classes = [IsAuthenticated] 
+    permission_classes = [] 
 
 class ActivityViewSet(viewsets.ModelViewSet):
     queryset = Activity.objects.all()
@@ -49,7 +49,7 @@ class ActivityViewSet(viewsets.ModelViewSet):
 class ContactViewSet(viewsets.ModelViewSet):
     queryset = Contact.objects.all()
     serializer_class = ContactSerializer
-    permission_classes = [IsAuthenticated] 
+    permission_classes = [] 
     
 
 @api_view(['POST'])
