@@ -7,7 +7,7 @@ class GalleryForm(forms.ModelForm):
         model = Gallery
         fields = ['description', 'image']
         widgets = {
-            'image': forms.ClearableFileInput(attrs={'multiple': True}),
+            'image': forms.ClearableFileInput(),
         }
 
 class ActivityForm(forms.ModelForm):
@@ -15,5 +15,5 @@ class ActivityForm(forms.ModelForm):
         model = Activity
         fields = ['description', 'image']
         widgets = {
-            'image': forms.ClearableFileInput(attrs={'multiple': True}),
+            'image': forms.ClearableFileInput(),
         }
